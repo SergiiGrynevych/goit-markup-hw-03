@@ -1,0 +1,267 @@
+/* primary text color #212121 */
+
+/* secondary color #757575 */
+
+/* third-text-color: Hero, advantages, section H2 what we do, footer <p>, adress only <p>, social links when :hover - #FFFFFF */
+
+/* link color #2196F3 */
+
+/* footer adress ul li - rgba(255, 255, 255, 0.6); */
+
+/* 2020 | Developed by GoIT Students - rgba(255, 255, 255, 0.4); */
+
+/* bcg логотипов с раздела преимущества #F5F4FA; */
+
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --third-text-color: #FFFFFF;
+    --link-color: #2196F3;
+    --developers-color: rgba(255, 255, 255, 0.4);
+    --resources-portfolio-color: #F5F4FA;
+    --benefit-capabilities-color: rgba(47, 48, 58, 0.8);
+}
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--third-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+/* Логотип */
+span.first-name,
+span.last-name{
+    color: var(--link-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+span.last-name{
+    color: var(--primary-text-color);
+}
+
+/* Верхняя панель перехода по ссылкам внутри сайта */
+.nav-link .title{
+    color: inherit;  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-link .title:hover,
+.nav-link .title:focus{
+    color: var(--link-color);
+}
+
+/* Верхняя панель отправки мейла и телефонного звонка */
+.nav-contacts .link{
+    color: var(--secondary-text-color); 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-link .current{
+    color: var(--link-color);
+}
+
+.nav-contacts .link:hover,
+.nav-contacts .link:focus{
+    color: var(--link-color);
+}
+
+/* Заглавие сайта - HERO */
+.hero .title{
+    color: var(--third-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero .link{
+    background-color: var(--link-color);
+    color: var(--third-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Преимущества */
+.advantages-description{
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.advantages img{
+    background-color: #F5F4FA;
+}
+
+.advantages-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages img:hover,
+.advantages img:focus{
+    background-color: var(--link-color);
+}
+
+/* Чем мы занимаемся */
+.title-section{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.benefit .capabilities{
+    color: var(--third-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--benefit-capabilities-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team{
+    background-color: var(--resources-portfolio-color);
+}
+
+/* Наша команда */
+.team .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team p{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Наша команда в соц.сетях */
+.social-links img:hover,
+.social-links img:focus{
+    background-color: var(--link-color);
+}
+
+.partners img:hover,
+.partners img:focus{
+    background-color: var(--link-color);
+}
+
+
+.first-name-logo,
+.last-name-logo{
+    color: var(--link-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+}
+
+.last-name-logo{
+    color: var(--third-text-color);
+}
+
+.contacts > p{
+    color: var(--third-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.contacts a{
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.join{
+    color: var(--third-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.developers{
+    color: var(--developers-color);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+
+.resources button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0px;
+}
+
+.resources button:hover,
+.resources button:focus{
+    color: var(--third-text-color);
+}
+.portfolio h2{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .text{
+    color: var(--third-text-color);
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+.portfolio .product{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.86;
+}
+
+footer{
+    background-color: #2F303A;;
+}
+
+footer .join-photo:hover,
+footer .join-photo:focus{
+    background-color: var(--link-color);
+}
