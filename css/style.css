@@ -20,6 +20,7 @@
     --developers-color: rgba(255, 255, 255, 0.4);
     --resources-portfolio-color: #F5F4FA;
     --benefit-capabilities-color: rgba(47, 48, 58, 0.8);
+    --border-partners-company-color: #AFB1B8;
 }
 
 body{
@@ -30,6 +31,15 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+  }
 
 a{
     text-decoration: none;
@@ -46,19 +56,31 @@ span.last-name{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 0px;
 }
 
 span.last-name{
     color: var(--primary-text-color);
 }
 
+.nav-link{
+    padding: 0;
+    margin: 0;
+}
+
 /* Верхняя панель перехода по ссылкам внутри сайта */
-.nav-link .title{
+.nav-link .title,
+.nav-contacts .link{
     color: inherit;  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 0px;
 }
 
 .nav-link .title:hover,
@@ -66,17 +88,17 @@ span.last-name{
     color: var(--link-color);
 }
 
-/* Верхняя панель отправки мейла и телефонного звонка */
-.nav-contacts .link{
-    color: var(--secondary-text-color); 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
 .nav-link .current{
     color: var(--link-color);
+}
+/* Верхняя панель отправки мейла и телефонного звонка */
+.nav-contacts{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-contacts .link{
+    color: var(--secondary-text-color); 
 }
 
 .nav-contacts .link:hover,
@@ -85,44 +107,50 @@ span.last-name{
 }
 
 /* Заглавие сайта - HERO */
+.hero{
+    text-align: center;
+}
 .hero .title{
     color: var(--third-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    background-color: tomato;
 }
 
 .hero .link{
     background-color: var(--link-color);
+    border-radius: 4px;
     color: var(--third-text-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* display: flex; */
-    /* align-items: center; */
-    text-align: center;
     letter-spacing: 0.06em;
+    display: inline-block;
+    margin-top: 46px;
+    margin-bottom: 0px;
+    padding: 10px 32px;
+    min-width: 200px;
 }
 
 /* Преимущества */
-.advantages-description{
-    color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 2;
+h2, .advantages{
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .advantages img{
     background-color: #F5F4FA;
-}
-
-.advantages-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+    border-radius: 4px;
+    min-width: 278px;
+    padding: 25px 106.34px;
+    margin-top: 94px;
+    margin-bottom: 0px;
 }
 
 .advantages img:hover,
@@ -130,12 +158,44 @@ span.last-name{
     background-color: var(--link-color);
 }
 
+.advantages-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.advantages-description{
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
 /* Чем мы занимаемся */
+.benefit, .benefit h3{
+    padding: 0;
+    margin: 0;
+}
+
 .title-section{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    display: inline-block;
+    margin-top: 94px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit img{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: inline-block;
 }
 
 .benefit .capabilities{
@@ -144,21 +204,37 @@ span.last-name{
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-color: var(--benefit-capabilities-color);
     border-radius: 0px 0px 4px 4px;
+    display: inline-block;
+    min-width: 380px;  
+    padding: 27px 88px;  
+}
+
+/* Наша команда */
+
+/*.title-section,*/ .team ul, .team .title, .team p{
+    padding: 0;
+    margin: 0;
 }
 
 .team{
     background-color: var(--resources-portfolio-color);
 }
 
-/* Наша команда */
+.team .team-photo{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
 .team .title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .team p{
@@ -166,6 +242,12 @@ span.last-name{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.social-links > li{
+    margin-bottom: 36px;
 }
 
 /* Наша команда в соц.сетях */
@@ -174,11 +256,40 @@ span.last-name{
     background-color: var(--link-color);
 }
 
+.partners, .partners a{
+    padding: 0;
+    margin: 0;
+}
+
+.partners img{
+    border: 1px solid var(--border-partners-company-color);
+    border-radius: 4px;
+    min-width: 175px;
+    margin-top: 50px;
+}
+.partners .yaco{
+    padding: 21px 65px;
+}
+.partners .tagline{
+    padding: 19px 68px;
+}
+.partners .company{
+    padding: 24px 71px 24.73px 63px;
+}
+.partners .foster{
+    padding: 25px 46px 24.28px 47px;
+}
+.partners .brand{
+    padding: 22px 58px;
+}
+.partners .tag-line{
+    padding: 23px 43px;
+}
+
 .partners img:hover,
 .partners img:focus{
     background-color: var(--link-color);
 }
-
 
 .first-name-logo,
 .last-name-logo{
