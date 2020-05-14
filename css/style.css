@@ -195,6 +195,7 @@ h2, .advantages{
 }
 
 .benefit img{
+    display: block;
     margin-top: 50px;
     margin-bottom: 0px;
 }
