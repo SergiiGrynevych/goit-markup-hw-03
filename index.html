@@ -12,15 +12,15 @@
     <header>
         <div class="container">
             <nav class="nav">
-                <a href="./index.html"><span class="first-name">Web</span><span class="last-name">Studio</span></a>
+                <a href="./index.html"><span class="first-name">Web</span><span class="last-name"> Studio</span></a>
                 <ul class="nav-link">
-                    <li><a href="" class="title current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="title">Портфолио</a></li>
-                    <li><a href="" class="title">Контакты</a></li>
+                    <li class="item"><a href="" class="title current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="title">Портфолио</a></li>
+                    <li class="item"><a href="" class="title">Контакты</a></li>
                 </ul>
                 <ul class="nav-contacts">
-                    <li><a href="mailto:info@devstudio.com" class="link"><img src="./images/mail.svg" alt="Иконка емейл"> info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="link"><img src="./images/phone.svg" alt="Иконка телефона"> +38 096 111 11 11</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link"><img src="./images/mail.svg" alt="Иконка емейл" class="image"> info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link"><img src="./images/phone.svg" alt="Иконка телефона" class="image"> +38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,25 +36,33 @@
             <h2>Преимущества</h2>
             <div class="container">
                 <ul class="advantages">
-                    <li>
-                        <img src="./images/satellite-dish.svg " alt="Иконка спутниковой тарелки">
-                        <h3 class="advantages-title">Внимание к деталям</h3>
-                        <p class="advantages-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <li class="advantages-element">
+                        <div class="advantages-content">
+                            <img src="./images/satellite-dish.svg " alt="Иконка спутниковой тарелки">
+                            <h3 class="advantages-title">Внимание к деталям</h3>
+                            <p class="advantages-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/clock.svg" alt="Иконка часов">
-                        <h3 class="advantages-title">Пунктуальность</h3>
-                        <p class="advantages-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <li class="advantages-element">
+                        <div class="advantages-content">
+                            <img src="./images/clock.svg" alt="Иконка часов">
+                            <h3 class="advantages-title">Пунктуальность</h3>
+                            <p class="advantages-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/computer.svg" alt="Иконка ноутбука">
-                        <h3 class="advantages-title">Планирование</h3>
-                        <p class="advantages-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <li class="advantages-element">
+                        <div class="advantages-content">
+                            <img src="./images/computer.svg" alt="Иконка ноутбука">
+                            <h3 class="advantages-title">Планирование</h3>
+                            <p class="advantages-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/cosmonaut.svg" alt="Логотип космонафта">
-                        <h3 class="advantages-title">Современные технологии</h3>
-                        <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <li class="advantages-element">
+                        <div class="advantages-content">
+                            <img src="./images/cosmonaut.svg" alt="Логотип космонафта">
+                            <h3 class="advantages-title">Современные технологии</h3>
+                            <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </div>
                     </li>          
                 </ul>
             </div>
@@ -84,13 +92,13 @@
         <section class="team">
             <div class="container">
                 <h2 class="title-section">Наша команда</h2>
-                <ul>
+                <ul class="team-flex">
                     <li>
                         <img src="./images/John.png" alt="Фото Джона Смита" width="278" class="team-photo">
                         <h3 lang="en" class="title">John Smith</h3>
                         <p lang="en">Product Designer</p>
                         <ul class="social-links">
-                            <li><a href=""><img src="./images/instagram.svg" alt="Логотип Инстаграм"></a></li>
+                            <li><a href="" class="logo"><img src="./images/instagram.svg" alt="Логотип Инстаграм"></a></li>
                             <li><a href=""><img src="./images/Twitter.svg" alt="Логотип Твиттер"></a></li>
                             <li><a href=""><img src="./images/Facebook.svg" alt="Логотип Фейсбук"></a></li>
                             <li><a href=""><img src="./images/linkedin.svg" alt="Логотип Ликнедин"></a></li>
@@ -151,28 +159,29 @@
 
     <footer>
         <div class="container footer">
-            <section>
-                <!--Скрытый заголовок-->
-                <h2>Адрес и контакты</h2>
-    
-                <a href="./index.html"><span class="first-name-logo">Web</span><span class="last-name-logo">Studio</span></a>
-                <address class="contacts">
-                    <p>г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>         
-                </address>
-            </section>
-            
-            <section>
+            <!--Скрытый заголовок-->
+            <h2>Адрес и контакты</h2>
+            <section class="footer-flex">
+                <div>
+                    <a href="./index.html"><span class="first-name-logo">Web</span><span class="last-name-logo"> Studio</span></a>
+                    <address class="contacts">
+                        <p>г. Киев, пр-т Леси Украинки, 26</p>
+                        <ul>
+                            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>         
+                    </address>
+                </div>
+
                 <h2 class="join">присоединяйтесь</h2>
-                <ul class="social-links-footer">
-                    <li><a href=""><img src="./images/social-links-white/instagram-white.svg" alt="Логотип Инстаграм" class="join-photo"></a></li>
-                    <li><a href=""><img src="./images/social-links-white/twitter-white.svg" alt="Логотип Твиттер" class="join-photo"></a></li>
-                    <li><a href=""><img src="./images/social-links-white/facebook-white.svg" alt="Логотип Фейсбук" class="join-photo"></a></li>
-                    <li><a href=""><img src="./images/social-links-white/linkedin-white.svg" alt="Логотип Ликнедин" class="join-photo"></a></li>
-                </ul>
+                <div>
+                    <ul class="social-links-footer">
+                        <li><a href="" class="join-link"><img src="./images/social-links-white/instagram-white.svg" alt="Логотип Инстаграм" class="join-photo"></a></li>
+                        <li><a href="" class="join-link"><img src="./images/social-links-white/twitter-white.svg" alt="Логотип Твиттер" class="join-photo"></a></li>
+                        <li><a href="" class="join-link"><img src="./images/social-links-white/facebook-white.svg" alt="Логотип Фейсбук" class="join-photo"></a></li>
+                        <li><a href="" class="join-link"><img src="./images/social-links-white/linkedin-white.svg" alt="Логотип Ликнедин" class="join-photo"></a></li>
+                    </ul>
+                </div>
             </section>
             <div class="line"></div>
             <p class="developers">2020 | Developed by GoIT Students</p>

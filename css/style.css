@@ -53,36 +53,54 @@ li {
 /* Логотип */
 span.first-name,
 span.last-name{
+    display: flexbox;
     color: var(--link-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    display: inline-block;
-    margin-top: 24px;
-    margin-bottom: 0px;
 }
 
 span.last-name{
     color: var(--primary-text-color);
+    margin-right: 86px;
 }
 
+/* Верхняя панель перехода по ссылкам внутри сайта */
 .nav-link{
     padding: 0;
     margin: 0;
 }
 
-/* Верхняя панель перехода по ссылкам внутри сайта */
+.nav{
+    display: flex;
+    align-items: center;
+} 
+
+.nav-link{
+    display: flex;
+}
+
+.nav-link .item + .item{
+    margin-left: 50px;
+}
+
+.nav-link .title{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .nav-link .title,
 .nav-contacts .link{
+    display: inline-block;
+    margin-bottom: 0px;
+
     color: inherit;  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: inline-block;
-    margin-top: 32px;
-    margin-bottom: 0px;
 }
 
 .nav-link .title:hover,
@@ -95,8 +113,22 @@ span.last-name{
 }
 /* Верхняя панель отправки мейла и телефонного звонка */
 .nav-contacts{
+    display: flex;    
     padding: 0;
     margin: 0;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-contacts .item + .item{
+    display: flexbox;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.nav-contacts .image{
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .nav-contacts .link{
@@ -113,18 +145,23 @@ span.last-name{
     text-align: center;
 }
 .hero .title{
+    margin-top: 0;
+
     color: var(--third-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 200px;
-    margin-bottom: 0px;
     background-color: tomato;
 }
 
 .hero .link{
+    display: inline-block;
+    margin-top: 46px;
+    margin-bottom: 0px;
+    padding: 10px 32px;
+
     background-color: var(--link-color);
     border-radius: 4px;
     color: var(--third-text-color);
@@ -132,14 +169,22 @@ span.last-name{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    display: inline-block;
-    margin-top: 46px;
-    margin-bottom: 0px;
-    padding: 10px 32px;
     min-width: 200px;
 }
 
 /* Преимущества */
+.advantages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-element{
+    display: flex;
+    text-align: left;
+    margin-top: 94px;
+    margin-bottom: 0px;
+}
+
 h2, .advantages{
     padding: 0;
     margin: 0;
@@ -147,12 +192,11 @@ h2, .advantages{
 }
 
 .advantages img{
+    display: block;
     background-color: #F5F4FA;
     border-radius: 4px;
     min-width: 278px;
     padding: 25px 106.34px;
-    margin-top: 94px;
-    margin-bottom: 0px;
 }
 
 .advantages img:hover,
@@ -171,6 +215,7 @@ h2, .advantages{
 
 .advantages-description{
     color: var(--secondary-text-color);
+    width: 278px;
     font-size: 14px;
     line-height: 2;
     margin-top: 10px;
@@ -192,6 +237,11 @@ h2, .advantages{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.benefit{
+    display: flex;
+    justify-content: space-between;
 }
 
 .benefit img{
@@ -226,6 +276,11 @@ h2, .advantages{
     background-color: var(--resources-portfolio-color);
 }
 
+.team-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 .team .team-photo{
     margin-top: 50px;
     margin-bottom: 0px;
@@ -249,20 +304,35 @@ h2, .advantages{
     margin-bottom: 0px;
 }
 
+/* Наша команда в соц.сетях */
 .social-links > li{
-    margin-bottom: 36px;
-    padding-bottom: 130px;
+    margin-bottom: 118px;
 }
 
-/* Наша команда в соц.сетях */
+.social-links img{
+    padding: 12px;
+    margin-top: 16px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-evenly
+}
+
 .social-links img:hover,
 .social-links img:focus{
     background-color: var(--link-color);
 }
 
+/* Постоятнные клиенты */
 .partners, .partners a{
     padding: 0;
     margin: 0;
+}
+
+.partners{
+    display: flex;
+    justify-content: space-between;
 }
 
 .partners img{
@@ -270,6 +340,7 @@ h2, .advantages{
     border-radius: 4px;
     min-width: 175px;
     margin-top: 50px;
+    margin-bottom: 94px;
 }
 .partners .yaco{
     padding: 21px 65px;
@@ -295,77 +366,7 @@ h2, .advantages{
     background-color: var(--link-color);
 }
 
-.container-footer{
-    margin-top: 94px;
-    margin-bottom: 0px;
-}
-
-.first-name-logo,
-.last-name-logo{
-    color: var(--link-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.18;
-    display: inline-block;
-    margin-top: 21px;
-    margin-bottom: 0px;
-}
-
-.last-name-logo{
-    color: var(--third-text-color);
-}
-
-.contacts > p{
-    color: var(--third-text-color);
-    font-size: 14px;
-    line-height: 1.71;
-    font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.contacts > ul{
-    padding: 0;
-    margin: 0;
-}
-
-.contacts a{
-    color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 1.71;
-    font-style: normal;
-    display: inline-block;
-    margin-top: 9px;
-    margin-bottom: 0px;
-}
-
-.join{
-    color: var(--third-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-top: 56px;
-    margin-bottom: 0px;
-}
-
-.line{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    outline: 1px solid var(--line-developers-color);
-}
-
-.developers{
-    color: var(--developers-color);
-    font-size: 12px;
-    line-height: 2;
-    text-align: center;
-    margin: 18px;
-}
-
+/* portfolio */
 .resources button{
     font-family: Roboto;
     font-style: normal;
@@ -426,24 +427,119 @@ h2, .advantages{
     margin-bottom: 0px;
 }
 
+.hidden{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* footer */
+.contacts > ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-flex{
+    display: flex;
+}
+
 footer{
     background-color: #2F303A;
     padding-bottom: 21px;
+}
+
+.container-footer{
+    margin-top: 94px;
+    margin-bottom: 0px;
+}
+
+.first-name-logo,
+.last-name-logo{
+    display: flexbox;
+    color: var(--link-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+    margin-top: 21px;
+    margin-bottom: 0px;
+}
+
+.last-name-logo{
+    color: var(--third-text-color);
+}
+
+.contacts > p{
+    color: var(--third-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.contacts a{
+    /* display: inline-block; */
+    margin-top: 9px;
+    margin-bottom: 0px;
+
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.join{
+    margin-top: 56px;
+    margin-bottom: 0px;
+
+    color: var(--third-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.line{
+    display: inline-block;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 1px solid var(--line-developers-color);
+}
+
+.developers{
+    color: var(--developers-color);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.join-photo{
+    padding: 12px;
+    margin-top: 21px;
 }
 
 footer .join-photo:hover,
 footer .join-photo:focus{
     background-color: var(--link-color);
 }
-
+/* 
 .header-line{
     display: inline-block;
     border: 1px solid var(--header-line-color);
     margin-top: 33px;
+} */
+
+.social-links-footer{
+    margin: 0;
+    padding: 0;
 }
 
-.hidden{
-    padding: 0;
-    margin: 0;
-    text-align: center;
+
+
+.join-link{
+    display: block;
 }
