@@ -146,6 +146,11 @@ span.last-name{
 .hero .title{
     margin-top: 0;
 
+    margin-left: auto;
+    margin-right: auto;
+    width: 646px;
+    align-content: center;
+
     color: var(--third-text-color);
     font-weight: 900;
     font-size: 44px;
