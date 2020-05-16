@@ -527,7 +527,7 @@ footer{
 }
 
 .contacts a{
-    /* display: inline-block; */
+    display: block;
     margin-top: 9px;
     margin-bottom: 0px;
 
@@ -570,8 +570,10 @@ footer{
 }
 
 .join-photo{
+    display: block;
     padding: 12px;
     margin-top: 21px;
+    background-color: var(--line-developers-color);
 }
 
 footer .join-photo:hover,
@@ -588,18 +590,19 @@ footer .join-photo:focus{
 .social-links-footer{
     display: flex;
     margin: 0;
-    margin-left: 179px;
     padding: 0;
+    margin-left: 179px;
 }
 
 .social-logo{
+    display: block;
     margin-right: 10px;
 }
 
 .social-logo:last-child {
     margin-right: 0;
   }
-
-.join-photo{
-    background-color: var(--line-developers-color);
-}
+/* 
+  .join-link{
+      display: block;
+  } */
