@@ -34,15 +34,20 @@ body{
     font-weight: 400;
 }
 
+/*.title-section,*/ .team ul, .team .title, .team p, .logo, .join, .contacts > p{
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
-  }
-
+    /* outline: 2px solid tomato; */
+}
+  
 a{
     text-decoration: none;
 }
@@ -51,6 +56,10 @@ li {
 }
 
 /* Логотип */
+.nav-logo{
+    margin-right: 86px;
+}
+
 span.first-name,
 span.last-name{
     color: var(--link-color);
@@ -62,7 +71,6 @@ span.last-name{
 
 span.last-name{
     color: var(--primary-text-color);
-    margin-right: 86px;
 }
 
 /* Верхняя панель перехода по ссылкам внутри сайта */
@@ -141,10 +149,13 @@ span.last-name{
 
 /* Заглавие сайта - HERO */
 .hero{
+    padding-top: 200px;
+    margin-bottom: 296px;
     text-align: center;
 }
 .hero .title{
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 46px;
 
     margin-left: auto;
     margin-right: auto;
@@ -157,12 +168,11 @@ span.last-name{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .hero .link{
     display: inline-block;
-    margin-top: 46px;
     margin-bottom: 0px;
     padding: 10px 32px;
 
@@ -178,28 +188,28 @@ span.last-name{
 
 /* Преимущества */
 .advantages{
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
+    padding-top: 94px;
 }
 
 .advantages-element{
-    display: flex;
     text-align: left;
-    margin-top: 94px;
-    margin-bottom: 0px;
+    /* padding: 0; */
 }
 
 h2, .advantages{
-    padding: 0;
-    margin: 0;
     text-align: center;
 }
 
 .advantages img{
     display: block;
-    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    background-color: var(--resources-portfolio-color);
     border-radius: 4px;
-    min-width: 278px;
+    max-width: 278px;
     padding: 25px 106.34px;
 }
 
@@ -213,16 +223,16 @@ h2, .advantages{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .advantages-description{
+    margin: 0;
     color: var(--secondary-text-color);
     width: 278px;
     font-size: 14px;
-    line-height: 2;
-    margin-top: 10px;
+    line-height: 1.7;
     margin-bottom: 0px;
 }
 
@@ -232,14 +242,21 @@ h2, .advantages{
     margin: 0;
 }
 
+.employment{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-bottom: 94px;
+}
+
 .title-section{
+    margin: 0;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    padding-top: 94px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
@@ -250,7 +267,6 @@ h2, .advantages{
 
 .benefit img{
     display: block;
-    margin-top: 50px;
     margin-bottom: 0px;
 }
 
@@ -260,7 +276,7 @@ h2, .advantages{
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     background-color: var(--benefit-capabilities-color);
     border-radius: 0px 0px 4px 4px;
     display: inline-block;
@@ -270,52 +286,54 @@ h2, .advantages{
 
 /* Наша команда */
 
-/*.title-section,*/ .team ul, .team .title, .team p{
-    padding: 0;
-    margin: 0;
-}
-
 .team{
-    margin-top: 94px;
     background-color: var(--resources-portfolio-color);
 }
+
+.employment-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 .team-flex{
     display: flex;
     justify-content: space-between;
 }
 
-.team .team-photo{
-    margin-top: 50px;
-    margin-bottom: 0px;
+.team-flex-item{
+    background-color: var(--third-text-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding-bottom: 24px;
 }
 
-.team .title{
+.team-flex-photo{
+    margin-bottom: 30px;
+}
+
+.team-flex .title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
-.team p{
+.team-flex-item p{
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 /* Наша команда в соц.сетях */
-.social-links > li{
-    margin-bottom: 118px;
-}
-
-.social-links img{
-    padding: 12px;
+/* .social-links{
     margin-top: 16px;
+} */
+.social-links img{
+    display: block;
 }
 
 .social-links{
@@ -323,12 +341,25 @@ h2, .advantages{
     justify-content: space-evenly;
 }
 
+.logo{
+    display: block;
+}
+
+/* .social-links > li{
+    padding-bottom: 16px;
+} */
+
 .social-links img:hover,
 .social-links img:focus{
     background-color: var(--link-color);
 }
 
 /* Постоятнные клиенты */
+.employment-partners{
+    padding-top: 94px;
+    margin-bottom: 94px;
+}
+
 .partners, .partners a{
     padding: 0;
     margin: 0;
@@ -337,32 +368,44 @@ h2, .advantages{
 .partners{
     display: flex;
     justify-content: space-between;
+    /* padding-bottom: 94px; */
 }
 
 .partners img{
     border: 1px solid var(--border-partners-company-color);
     border-radius: 4px;
     min-width: 175px;
-    margin-top: 50px;
-    margin-bottom: 94px;
+    /* margin-top: 50px;
+    margin-bottom: 94px; */
 }
+
+.partners .href{
+    display: block;
+}
+
 .partners .yaco{
     padding: 21px 65px;
+    display: block;
 }
 .partners .tagline{
     padding: 19px 68px;
+    display: block;
 }
 .partners .company{
     padding: 24px 71px 24.73px 63px;
+    display: block;
 }
 .partners .foster{
     padding: 25px 46px 24.28px 47px;
+    display: block;
 }
 .partners .brand{
     padding: 22px 58px;
+    display: block;
 }
 .partners .tag-line{
     padding: 23px 43px;
+    display: block;
 }
 
 .partners img:hover,
@@ -376,7 +419,7 @@ h2, .advantages{
     justify-content: center;
     margin: 0;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 93px;
 }
 
 button{
@@ -402,6 +445,7 @@ button{
 }
 
 .works{
+    padding-top: 50px;
     padding-bottom: 114px;
 }
 
@@ -415,6 +459,7 @@ button{
 .portfolio-links{
     width: calc((100% - 30px * 2) / 3);
     margin-right: 30px;
+    margin-top: 50px;
 }
 
 .portfolio-links:nth-child(3n){
@@ -423,18 +468,10 @@ button{
 
 .portfolio-elements, .portfolio-elements > img{
     display: block;
-    
     margin-right: 0px;
 } 
 
-.portfolio{
-    /* margin-top: 50px; */
-    margin-top: 23px;
-    margin-bottom: 0px;
-}
-
 .portfolio img{
-    margin-top: 50px;
     margin-bottom: 0px;
 }
 
@@ -451,6 +488,7 @@ button{
 }
 
 .portfolio .text{
+    display: none;
     color: var(--third-text-color);
     text-align: left;
     width: 332px;
@@ -472,6 +510,7 @@ button{
 }
 
 .hidden{
+    display: none;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -487,20 +526,23 @@ button{
     display: flex;
 }
 
+.footer-flex-block{
+    margin-top: 48px;
+}
+
 footer{
     background-color: #2F303A;
     padding-bottom: 21px;
 }
 
 .container-footer{
-    margin-top: 94px;
+    /* margin-top: 94px; */
     margin-bottom: 0px;
 }
 
 .footer-logo{
     display: block;
-    /* margin-top: 48px; */
-    margin-top: 21px;
+    margin-bottom: 10px;
 }
 
 .first-name-logo,
@@ -510,7 +552,6 @@ footer{
     font-weight: 700;
     font-size: 22px;
     line-height: 1.18;
-    margin-bottom: 0px;
 }
 
 .last-name-logo{
@@ -518,18 +559,19 @@ footer{
 }
 
 .contacts > p{
+    margin-bottom: 9px;
+
     color: var(--third-text-color);
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 0px;
 }
+
 
 .contacts a{
     display: block;
-    margin-top: 9px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    /* margin-bottom: 9px; */
 
     color: var(--secondary-text-color);
     font-size: 14px;
@@ -537,9 +579,12 @@ footer{
     font-style: normal;
 }
 
+.contacts li:first-child{
+    margin-bottom: 9px;
+}
+
 .join{
-    /* margin-top: 56px; */
-    margin-top: 29px; 
+    padding-top: 8px;
     margin-bottom: 0px;
     margin-left: 179px;
 
