@@ -74,6 +74,11 @@ span.last-name{
 }
 
 /* Верхняя панель перехода по ссылкам внутри сайта */
+header{
+    border-bottom: 1px solid var(--benefit-capabilities-color);
+
+}
+
 .nav-link{
     padding: 0;
     margin: 0;
