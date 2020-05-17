@@ -155,7 +155,7 @@ header{
 /* Заглавие сайта - HERO */
 .hero{
     padding-top: 200px;
-    margin-bottom: 296px;
+    padding-bottom: 296px;
     text-align: center;
 }
 .hero .title{
