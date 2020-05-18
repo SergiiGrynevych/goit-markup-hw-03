@@ -308,11 +308,8 @@ h2, .advantages{
     text-align: center;
     text-transform: uppercase;
     background-color: var(--benefit-capabilities-color);
-    border-radius: 0px 0px 4px 4px;
-/* 
-    max-width: 380px; */
-    
-    letter-spacing: 0.03em;
+    border-radius: 0px 0px 4px 4px; 
+    /* letter-spacing: 0.03em; */
 }
 
 /* Наша команда */
