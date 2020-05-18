@@ -25,6 +25,16 @@
     --header-line-color: #ECECEC;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body{
     color: var(--primary-text-color);
     background-color: var(--third-text-color);
@@ -196,13 +206,17 @@ header{
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
     padding-top: 94px;
 }
 
-.advantages-element{
+.advantages-element, .benefit-item{
     text-align: left;
     /* padding: 0; */
+    margin-right: 30px;
+}
+
+.advantages-element:last-child, .benefit-item:last-child{
+    margin-right: 0px;
 }
 
 h2, .advantages{
@@ -242,11 +256,6 @@ h2, .advantages{
 }
 
 /* Чем мы занимаемся */
-.benefit, .benefit h3{
-    padding: 0;
-    margin: 0;
-}
-
 .employment{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -265,34 +274,55 @@ h2, .advantages{
     text-align: center;
 }
 
+.benefit, .capabilities{
+    padding: 0;
+    margin: 0;
+}
+
 .benefit{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.benefit img{
+.employment-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* margin-bottom: 94px; */
+}
+
+.benefit-item img{
     display: block;
     margin-bottom: 0px;
+    /* min-width: auto; */
 }
 
-.benefit .capabilities{
+.benefit-item .capabilities{
+    display: block;
+    padding: 27px 82px;
+    
     color: var(--third-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    height: 70px;
     text-align: center;
     text-transform: uppercase;
     background-color: var(--benefit-capabilities-color);
     border-radius: 0px 0px 4px 4px;
-    display: inline-block;
-    min-width: 380px;  
-    padding: 27px 88px;  
+/* 
+    max-width: 380px; */
+    
+    letter-spacing: 0.03em;
 }
 
 /* Наша команда */
 
 .team{
     background-color: var(--resources-portfolio-color);
+}
+
+.logo-links{
+    padding: 12px;
 }
 
 .employment-team{
@@ -304,6 +334,7 @@ h2, .advantages{
 .team-flex{
     display: flex;
     justify-content: space-between;
+    max-width: auto;
 }
 
 .team-flex-item{
@@ -311,6 +342,7 @@ h2, .advantages{
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     padding-bottom: 24px;
+    max-width: 270px;
 }
 
 .team-flex-photo{
