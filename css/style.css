@@ -428,6 +428,7 @@ h2, .advantages{
     border: 1px solid var(--border-partners-company-color);
     border-radius: 4px;
     max-width: 170px;
+    min-height: 90px;
     /* margin-top: 50px;
     margin-bottom: 94px; */
 }
