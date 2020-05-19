@@ -554,6 +554,7 @@ h2, .advantages{
 
 .portfolio-card{     
     border: 1px solid #EEEEEE;
+    border-top: transparent;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 20px 24px;
