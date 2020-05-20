@@ -425,10 +425,8 @@ h2, .advantages{
 }
 
 .partners img{
-    border: 1px solid var(--border-partners-company-color);
-    border-radius: 4px;
-    max-width: 170px;
-    min-height: 90px;
+    display: block;
+    justify-content: center;
     /* margin-top: 50px;
     margin-bottom: 94px; */
 }
@@ -437,35 +435,21 @@ h2, .advantages{
     display: block;
 }
 
-.partners .yaco{
-    padding: 20px 62.73px 20.77px 63px;
-    display: block;
-}
-.partners .tagline{
-    padding: 19px 65px;
-    display: block;
-}
-.partners .company{
-    padding: 24px 64px 23.4px 65px;
-    display: block;
-}
-.partners .foster{
-    padding: 24px 45px;
-    display: block;
-}
-.partners .brand{
-    padding: 22px 55px 21px 56px;
-    display: block;
-}
-.partners .tag-line{
-    padding: 22px 40.52px 22.56px 41px;
-    display: block;
-}
-
 .partners img:hover,
 .partners img:focus{
     background-color: var(--link-color);
 }
+
+.partners-image{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--border-partners-company-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* portfolio */
 .filtres{
