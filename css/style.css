@@ -170,12 +170,12 @@ header{
 /* Заглавие сайта - HERO */
 .hero{
     padding-top: 200px;
-    padding-bottom: 296px;
+    padding-bottom: 200px;
     text-align: center;
 }
 .hero .title{
     margin: 0;
-    margin-bottom: 46px;
+    margin-bottom: 38px;
 
     margin-left: auto;
     margin-right: auto;
@@ -213,6 +213,7 @@ header{
     display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
+    align-items: center;
 }
 
 .advantages-element, .benefit-item{
@@ -259,6 +260,7 @@ h2, .advantages{
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 10px;
+    height: 16px;
 }
 
 .advantages-description{
@@ -268,6 +270,7 @@ h2, .advantages{
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 0px;
+    height: 75px;
 }
 
 /* Чем мы занимаемся */
