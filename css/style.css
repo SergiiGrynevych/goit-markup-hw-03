@@ -495,13 +495,15 @@ h2, .advantages{
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
-    border: 0px;
-    min-width: 73px;
+    border: none;
+    /* min-width: 73px; */
+    border-radius: 4px;
 }
 
 .filtres-resources button:hover,
 .filtres-resources button:focus{
     color: var(--third-text-color);
+    background-color: var(--link-color);
 }
 
 .works{
