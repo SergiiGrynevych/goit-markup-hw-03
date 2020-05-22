@@ -362,15 +362,20 @@ h2, .advantages{
 
 .team-flex{
     display: flex;
-    justify-content: space-between;
-    max-width: auto;
 }
 
 .team-flex-item{
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
     background-color: var(--third-text-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     padding-bottom: 24px;
+}
+
+.team-flex-item:last-child{
+    margin-right: 0px;
 }
 
 .team-flex-photo{
